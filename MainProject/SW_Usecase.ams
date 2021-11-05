@@ -182,13 +182,16 @@ Model Main_SW_Usecase {
 			IndexDomain: (l,l2);
 			Definition: {
 				if P_LocationType(l, 'Factory') and P_LocationType(l2, 'NDC') then
-					0.8
+					P_PrimaryFlow
 				elseif P_LocationType(l, 'NDC') and P_LocationType(l2, 'RDC') then
 					1.2
 				else
 					0
 				endif;
 			}
+		}
+		Parameter P_PrimaryFlow {
+			InitialData: 0.8;
 		}
 		Parameter P_Latitude {
 			IndexDomain: l;

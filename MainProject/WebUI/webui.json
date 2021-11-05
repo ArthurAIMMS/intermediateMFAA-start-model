@@ -48,6 +48,13 @@
             "height": "3",
             "customPosition": ""
           }
+        },
+        {
+          "uri": "Primary Flow Cost slider",
+          "layoutInfo": {
+            "width": "2",
+            "height": "1"
+          }
         }
       ]
     }
@@ -277,6 +284,33 @@
     },
     "zoom": {
       "literal": 4
+    }
+  },
+  "widgets/Primary Flow Cost slider": {
+    "aimms.widget.type": {
+      "literal": "slider"
+    },
+    "contents": {
+      "aimms": {
+        "contents": [
+          "P_PrimaryFlow"
+        ]
+      }
+    },
+    "max": {
+      "literal": 2
+    },
+    "min": {
+      "literal": 0
+    },
+    "name": {
+      "literal": "Primary Flow Cost slider"
+    },
+    "step": {
+      "literal": 0.1
+    },
+    "title": {
+      "literal": "Primary Flow Cost"
     }
   }
 }
